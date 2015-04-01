@@ -17,8 +17,11 @@ html
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-    body
+    body(style="margin-top:65px;")
         include ../includes/navigation.jade
+        include ../includes/sponsors.jade
+
+        block intro
 
         .container
             block content

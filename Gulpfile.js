@@ -13,15 +13,25 @@ gulp.task('jade', function() {
             'js/vendor/jquery-1.11.2.min.js',
             'js/bootstrap.min.js'
         ],
+        "sponsors": [
+            ["bvcaps.org", "Blue Valley CAPS"],
+            ["bvef.org", "BVEF"],
+            ["sprint.com", "Sprint"],
+            ["gm.com", "General Motors"],
+            ["honeywell.com", "Honeywell"],
+            ["cerner.com", "Cerner"],
+            ["ryerson.com", "Ryerson"],
+            ["nasa.gov", "NASA"]
+        ],
         'first': 'img/FIRSTicon_RGB.jpg',
         'recyclerush': 'img/RecycleRush.jpg'
     };
 
-    gulp.src('./jade/**/*.jade')
+    gulp.src('./jade/*.jade')
         .pipe(jade({
             locals: LOCALS
         }))
-        .pipe(gulp.dest('./'))
+        .pipe(gulp.dest('./html'))
         .pipe(connect.reload());
 });
 
@@ -38,7 +48,7 @@ gulp.task('watch', ['server'], function() {
 
 gulp.task('open', function() {
     gulp.src('./index.html')
-        .pipe(open('', {url: 'http://localhost:8000'}));
+        .pipe(open('', {url: 'http://localhost:8000/html'}));
 });
 
 gulp.task('default', ['jade', 'watch', 'open']);
