@@ -35,6 +35,41 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "/* jshint node:true */\nvar gulp    = require('gulp');\nvar jade    = require('gulp-jade');\nvar gutil   = require('gulp-util');\nvar connect = require('gulp-connect');\nvar open    = require('gulp-open');\nvar del     = require('del');\n\ngulp.task('clean', function() {\n    var callback;\n    del([\n        'assets/**',\n        '!assets/vendor/**'\n    ], callback);\n});\n\ngulp.task('assets', function() {\n    gulp.src('./bootstrap/dist/**', {base: \"./bootstrap/dist\"})\n        .pipe(gulp.dest('./assets/'));\n});\n\ngulp.task('jade', function() {\n    var LOCALS = {\n        \"ssets\": \"http://localhost:8000/assets/\",\n        \"css\": \"css/bootstrap.css\",\n        \"js\": [\n            \"js/bootstrap.min.js\"\n        ],\n        \"jquery\": \"//code.jquery.com/jquery-1.11.2.min.js\",\n        \"sponsors\": [\n            [\"bvcaps.org\", \"Blue Valley CAPS\"],\n            [\"bvef.org\", \"BVEF\"],\n            [\"sprint.com\", \"Sprint\"],\n            [\"gm.com\", \"General Motors\"],\n            [\"honeywell.com\", \"Honeywell\"],\n            [\"cerner.com\", \"Cerner\"],\n            [\"ryerson.com\", \"Ryerson\"],\n            [\"nasa.gov\", \"NASA\"]\n        ],\n        \"first\": \"img/FIRSTicon_RGB.jpg\",\n        \"recyclerush\": \"img/RecycleRush.jpg\"\n    };\n\n    gulp.src('./jade/*.jade')\n        .pipe(jade({\n            locals: LOCALS\n        }))\n        .on('error', gutil.log)\n        .pipe(gulp.dest('./html'))\n        .pipe(connect.reload());\n});\n\ngulp.task('server', function() {\n    connect.server({\n        livereload: true,\n        port: 8000\n    });\n});\n\ngulp.task('watch', ['server'], function() {\n    gulp.watch('./jade/**/*.jade', ['jade']);\n});\n\ngulp.task('open', function() {\n    gulp.src('./index.html')\n        .pipe(open('', {url: 'http://localhost:8000/html'}));\n});\n\ngulp.task('default', ['clean', 'assets', 'jade', 'watch', 'open']);",
+			"file": "Gulpfile.js",
+			"file_size": 1866,
+			"file_write_time": 130724092380097135,
+			"settings":
+			{
+				"buffer_size": 1803,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "jade/layout/basic.jade",
+			"settings":
+			{
+				"buffer_size": 945,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "jade/includes/sponsors.jade",
+			"settings":
+			{
+				"buffer_size": 663,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "jade/includes/navigation.jade",
+			"settings":
+			{
+				"buffer_size": 1831,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -43,10 +78,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 115.0,
-		"last_filter": "install",
+		"height": 400.0,
+		"last_filter": "Package Control: ",
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -56,7 +99,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 408.0
+		"width": 536.0
 	},
 	"console":
 	{
@@ -77,12 +120,13 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/dmtassio/Desktop/GitHub/mockups",
-		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade",
-		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/includes"
+		"/F/Users/Dominic/Documents/GitHub/mockups"
 	],
 	"file_history":
 	[
+		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/AlignTab/AlignTab.sublime-settings",
+		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/F/Users/Dominic/Documents/GitHub/mockups/package.json",
 		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/includes/navigation.jade",
 		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/layout/basic.jade",
 		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/includes/sponsors.jade",
@@ -119,6 +163,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'",
+			"=",
 			"navbar",
 			"span"
 		],
@@ -138,8 +184,133 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1132,
+								1132
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "jade/layout/basic.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								941,
+								941
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "jade/includes/sponsors.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "jade/includes/navigation.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -192,6 +363,22 @@
 		"selected_items":
 		[
 			[
+				"basic",
+				"jade\\layout\\basic.jade"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"navi",
+				"jade\\includes\\navigation.jade"
+			],
+			[
+				"spon",
+				"jade\\includes\\sponsors.jade"
+			],
+			[
 				"layout",
 				"jade\\layout\\basic.jade"
 			],
@@ -202,10 +389,6 @@
 			[
 				"nav",
 				"jade\\includes\\navigation.jade"
-			],
-			[
-				"navi",
-				"mockups\\src\\includes\\navigation.jade"
 			]
 		],
 		"width": 0.0
@@ -235,7 +418,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":

@@ -1,18 +1,22 @@
 /* jshint node:true */
-var gulp = require('gulp');
-var jade = require('gulp-jade');
-var gutil = require('gulp-util');
+var gulp    = require('gulp');
+var jade    = require('gulp-jade');
+var gutil   = require('gulp-util');
 var connect = require('gulp-connect');
-var open = require('gulp-open');
+var open    = require('gulp-open');
+var del     = require('del');
 
 gulp.task('jade', function() {
     var LOCALS = {
-        'assets': 'http://localhost:8000/assets/',
-        'css': 'css/bootstrap.css',
-        'js': [
-            'js/vendor/jquery-1.11.2.min.js',
-            'js/bootstrap.min.js'
-        ],
+        "assets": "http://localhost:8000/assets/",
+        "css": [],
+        "js": [],
+        "jquery": "//code.jquery.com/jquery-1.11.2.min.js",
+        "bootstrap": {
+            "path": "http://localhost:8000/bootstrap/dist/",
+            "css": "css/bootstrap.min.css",
+            "js": "js/boostrap.min.js"
+        },
         "sponsors": [
             ["bvcaps.org", "Blue Valley CAPS"],
             ["bvef.org", "BVEF"],
@@ -23,14 +27,15 @@ gulp.task('jade', function() {
             ["ryerson.com", "Ryerson"],
             ["nasa.gov", "NASA"]
         ],
-        'first': 'img/FIRSTicon_RGB.jpg',
-        'recyclerush': 'img/RecycleRush.jpg'
+        "first": "img/FIRSTicon_RGB.jpg",
+        "recyclerush": "img/RecycleRush.jpg"
     };
 
     gulp.src('./jade/*.jade')
         .pipe(jade({
             locals: LOCALS
         }))
+        .on('error', gutil.log)
         .pipe(gulp.dest('./html'))
         .pipe(connect.reload());
 });
