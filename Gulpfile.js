@@ -8,14 +8,14 @@ var del     = require('del');
 
 gulp.task('jade', function() {
     var LOCALS = {
-        "assets": "http://localhost:8000/assets/",
+        "assets": "/assets/",
         "css": [],
         "js": [],
         "jquery": "//code.jquery.com/jquery-1.11.2.min.js",
         "bootstrap": {
-            "path": "http://localhost:8000/bootstrap/dist/",
+            "path": "/bootstrap/dist/",
             "css": "css/bootstrap.min.css",
-            "js": "js/boostrap.min.js"
+            "js": "js/bootstrap.min.js"
         },
         "sponsors": [
             ["bvcaps.org", "Blue Valley CAPS"],

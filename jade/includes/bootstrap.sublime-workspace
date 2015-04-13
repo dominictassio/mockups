@@ -1,0 +1,271 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"spn",
+				"sponsor"
+			],
+			[
+				"co",
+				"collapse"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"nav",
+				"nav--brand"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "list",
+		"selected_items":
+		[
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/Users/Dominic/Documents/GitHub/bootstrap"
+	],
+	"file_history":
+	[
+		"/F/Users/Dominic/Documents/GitHub/mockups/jade/includes/sponsors.jade",
+		"/F/Users/Dominic/Documents/GitHub/mockups/jade/includes/navigation.jade",
+		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/AlignTab/AlignTab.sublime-settings",
+		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
+		"/F/Users/Dominic/Documents/GitHub/mockups/package.json",
+		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/includes/navigation.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/layout/basic.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/includes/sponsors.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/mockups/Gulpfile.js",
+		"/C/Users/dmtassio/Desktop/GitHub/bootstrap/less/bootstrap.less",
+		"/C/Users/dmtassio/Desktop/GitHub/bootstrap/less/variables.less",
+		"/C/Users/dmtassio/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/mockups/src/layout.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/assets/scss/modules/_nav.scss",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/mockups/src/includes/sponsors.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/mockups/src/includes/navigation.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/assets/scss/_base.scss",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/mockups/navigation.html",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/assets/scss/modules/_footer.scss",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/package.json",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/mockups/src/index.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/Gulpfile.js",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/assets/scss/_modules.scss",
+		"/C/Users/dmtassio/Desktop/GitHub/Website/assets/scss/main.scss"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"'",
+			"=",
+			"navbar",
+			"span"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bootstrap.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"basic",
+				"jade\\layout\\basic.jade"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"navi",
+				"jade\\includes\\navigation.jade"
+			],
+			[
+				"spon",
+				"jade\\includes\\sponsors.jade"
+			],
+			[
+				"layout",
+				"jade\\layout\\basic.jade"
+			],
+			[
+				"gulp",
+				"Gulpfile.js"
+			],
+			[
+				"nav",
+				"jade\\includes\\navigation.jade"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
