@@ -4,16 +4,17 @@ var jade    = require('gulp-jade');
 var gutil   = require('gulp-util');
 var connect = require('gulp-connect');
 var open    = require('gulp-open');
+var ghPages = require('gulp-gh-pages');
 var del     = require('del');
 
 gulp.task('jade', function() {
     var LOCALS = {
-        "assets": "/assets/",
+        "assets": "../assets/",
         "css": [],
         "js": [],
         "jquery": "//code.jquery.com/jquery-1.11.2.min.js",
         "bootstrap": {
-            "path": "/bootstrap/dist/",
+            "path": "../bootstrap/dist/",
             "css": "css/bootstrap.min.css",
             "js": "js/bootstrap.min.js"
         },
@@ -54,6 +55,11 @@ gulp.task('watch', ['server'], function() {
 gulp.task('open', function() {
     gulp.src('./index.html')
         .pipe(open('', {url: 'http://localhost:8000/html'}));
+});
+
+gulp.task('deploy', function() {
+    gulp.src(['html/**/*', 'assets/**/*', 'bootstrap/dist/**/*'], {base: './'})
+        .pipe(ghPages());
 });
 
 gulp.task('default', ['jade', 'watch', 'open']);

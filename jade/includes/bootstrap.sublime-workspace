@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"brand",
+				"brand-primary"
+			],
+			[
 				"spn",
 				"sponsor"
 			],
@@ -35,6 +55,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/F/Users/Dominic/Documents/GitHub/bootstrap/less/custom.less",
+			"settings":
+			{
+				"buffer_size": 745,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/Users/Dominic/Documents/GitHub/bootstrap/less/variables.less",
+			"settings":
+			{
+				"buffer_size": 27056,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -85,10 +121,15 @@
 	},
 	"expanded_folders":
 	[
-		"/F/Users/Dominic/Documents/GitHub/bootstrap"
+		"/F/Users/Dominic/Documents/GitHub/bootstrap",
+		"/F/Users/Dominic/Documents/GitHub/bootstrap/less"
 	],
 	"file_history":
 	[
+		"/F/Users/Dominic/Documents/GitHub/bootstrap/less/bootstrap.less",
+		"/F/Users/Dominic/Documents/GitHub/bootstrap/less/buttons.less",
+		"/F/Users/Dominic/Documents/GitHub/bootstrap/less/mixins/buttons.less",
+		"/F/Users/Dominic/Documents/GitHub/bootstrap/less/variables.less",
 		"/F/Users/Dominic/Documents/GitHub/mockups/jade/includes/sponsors.jade",
 		"/F/Users/Dominic/Documents/GitHub/mockups/jade/includes/navigation.jade",
 		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
@@ -118,7 +159,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -132,6 +173,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"navbar",
+			"navbar\\",
+			"navbar",
 			"'",
 			"=",
 			"navbar",
@@ -153,8 +197,68 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/F/Users/Dominic/Documents/GitHub/bootstrap/less/custom.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								737,
+								737
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/F/Users/Dominic/Documents/GitHub/bootstrap/less/variables.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -206,6 +310,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"var",
+				"less\\variables.less"
+			],
 			[
 				"basic",
 				"jade\\layout\\basic.jade"
@@ -262,7 +370,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":
