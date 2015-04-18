@@ -48,6 +48,7 @@
 	"buffers":
 	[
 		{
+<<<<<<< HEAD
 			"file": "Gulpfile.js",
 			"settings":
 			{
@@ -60,14 +61,27 @@
 			"settings":
 			{
 				"buffer_size": 4534,
+=======
+			"file": "jade/layout/basic.jade",
+			"settings":
+			{
+				"buffer_size": 1156,
+>>>>>>> origin/master
 				"line_ending": "Windows"
 			}
 		},
 		{
+<<<<<<< HEAD
 			"file": "jade/includes/footer.jade",
 			"settings":
 			{
 				"buffer_size": 1308,
+=======
+			"file": "jade/team.jade",
+			"settings":
+			{
+				"buffer_size": 2090,
+>>>>>>> origin/master
 				"line_ending": "Windows"
 			}
 		}
@@ -79,6 +93,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
+<<<<<<< HEAD
 		"height": 400.0,
 		"last_filter": "list",
 		"selected_items":
@@ -93,6 +108,26 @@
 			],
 			[
 				"Package Control: ",
+=======
+		"height": 115.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+>>>>>>> origin/master
 				"Package Control: List Packages"
 			],
 			[
@@ -100,7 +135,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 536.0
+		"width": 408.0
 	},
 	"console":
 	{
@@ -121,10 +156,12 @@
 	},
 	"expanded_folders":
 	[
-		"/F/Users/Dominic/Documents/GitHub/mockups"
+		"/C/Users/dmtassio/Desktop/GitHub/mockups",
+		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade"
 	],
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/F/Users/Dominic/Downloads/FTBInfinityServer/ServerStart.sh",
 		"/F/Users/Dominic/Documents/GitHub/mockups/jade/includes/sponsors.jade",
 		"/F/Users/Dominic/Documents/GitHub/mockups/jade/includes/navigation.jade",
@@ -133,13 +170,18 @@
 		"/F/Users/Dominic/Documents/GitHub/mockup/jade/index.jade",
 		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
 		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+=======
+		"/C/Users/dmtassio/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/dmtassio/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/index.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/includes/navigation.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/includes/sponsors.jade",
+		"/C/Users/dmtassio/Desktop/GitHub/mockups/Gulpfile.js",
+>>>>>>> origin/master
 		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/AlignTab/AlignTab.sublime-settings",
 		"/C/Users/Dominic/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
 		"/F/Users/Dominic/Documents/GitHub/mockups/package.json",
-		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/includes/navigation.jade",
 		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/layout/basic.jade",
-		"/C/Users/dmtassio/Desktop/GitHub/mockups/jade/includes/sponsors.jade",
-		"/C/Users/dmtassio/Desktop/GitHub/mockups/Gulpfile.js",
 		"/C/Users/dmtassio/Desktop/GitHub/bootstrap/less/bootstrap.less",
 		"/C/Users/dmtassio/Desktop/GitHub/bootstrap/less/variables.less",
 		"/C/Users/dmtassio/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -193,11 +235,12 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+<<<<<<< HEAD
 					"file": "Gulpfile.js",
 					"semi_transient": false,
 					"settings":
@@ -234,14 +277,26 @@
 					"settings":
 					{
 						"buffer_size": 4534,
+=======
+					"file": "jade/layout/basic.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1156,
+>>>>>>> origin/master
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								633,
 								633
+=======
+								0,
+								0
+>>>>>>> origin/master
 							]
 						],
 						"settings":
@@ -257,34 +312,51 @@
 					"type": "text"
 				},
 				{
+<<<<<<< HEAD
 					"buffer": 2,
 					"file": "jade/includes/footer.jade",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1308,
+=======
+					"buffer": 1,
+					"file": "jade/team.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2090,
+>>>>>>> origin/master
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								296,
 								296
+=======
+								980,
+								1003
+>>>>>>> origin/master
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/base16-ocean.dark.tmTheme",
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 238.0,
 						"zoom_level": 1.0
 					},
+<<<<<<< HEAD
 					"stack_index": 1,
+=======
+					"stack_index": 0,
+>>>>>>> origin/master
 					"type": "text"
 				}
 			]

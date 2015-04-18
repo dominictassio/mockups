@@ -1,0 +1,38 @@
+extends layout/basic.jade
+
+block title
+    title FRC Team 2410 :: The Metal Mustangs :: Team
+
+block content
+    .row
+        .col-sm-9.col-xs-12
+            h1#statistics Statistics
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ut ipsam quasi illum accusamus suscipit officia animi et sequi doloremque iure rerum consequuntur architecto nostrum vel modi repudiandae impedit. Tempora eius possimus eligendi ratione maxime dolores obcaecati cum ipsam dolor eaque blanditiis aliquam consequuntur asperiores repudiandae nisi voluptas itaque molestiae voluptatibus doloribus ut veniam aut quam nihil atque explicabo quod saepe eveniet ipsa neque cumque quis totam sunt perspiciatis expedita mollitia enim sed voluptatem. Ipsa sint iusto aliquid commodi accusantium vel tempore soluta nulla nobis reiciendis explicabo similique laboriosam dolor?
+            h1#students Students
+            - var n = 0
+            while n < 50
+                - n++
+                .media
+                    .media-left
+                        a
+                            img(src="", alt="student").media-object
+                    .media-body
+                        h4 NAME NAME
+                        p
+                            each val in ["GRADE", "YEAR", "JOB"]
+                                span.label.label-primary= val
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolores facilis nihil dignissimos repellendus dolor veritatis hic distinctio obcaecati ipsam.
+
+        .col-sm-3.col-xs-12
+            nav(data-spy="affix", data-offset-top="60", data-offset-bottom="200")
+                ul.nav.nav-pills.nav-stacked
+                    li.active
+                        a(href="#") Statistics
+                    li
+                        a(href="#students") Students
+                    li
+                        a(href="#mentors") Mentors
+                    li
+                        a(href="#sponsors") Sponsors
+                    li
+                        a(href="#top").btn.btn-link.btn-sm Back to top
